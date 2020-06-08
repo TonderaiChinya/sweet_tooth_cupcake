@@ -71,6 +71,21 @@ nav {
   }
 }
 
+.cakes {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3) 1fr;
+
+  .cake-item {
+    width: 300px;
+    height: 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // CONTACT SECTION
 .map iframe {
   width: 100%;
@@ -150,7 +165,8 @@ nav {
   display: none;
 }
 
-.contact-form h3 {
+.contact-form h3,
+.onmap {
   color: #111111;
   font-weight: 700;
   text-transform: uppercase;
