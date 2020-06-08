@@ -3,6 +3,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooths;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -32,8 +36,8 @@ nav {
   position: fixed;
 }
 
-nav .nav-item.active {
-  border-bottom: 3px solid #b28104;
+nav .nav-item {
+  margin-left: 20px;
 }
 
 nav .nav-item:hover {
@@ -41,7 +45,7 @@ nav .nav-item:hover {
 }
 
 nav .navbar-brand {
-  margin-right: 46%;
+  margin: 0 auto;
   float: right;
   position: relative;
 }
@@ -56,8 +60,9 @@ nav .navbar-brand {
 
 .top-content h1 {
   font-family: "Lobster", cursive;
+  padding-top: 20%;
   text-align: center;
-  color: white;
+  color: #b28104;
   font-size: 6rem;
 }
 
@@ -89,7 +94,7 @@ nav .navbar-brand {
 .contact-text .ct-item .ct-icon {
   height: 80px;
   width: 80px;
-  background: #ff69b4;
+  background: #000;
   border-radius: 50%;
   font-size: 40px;
   line-height: 80px;
