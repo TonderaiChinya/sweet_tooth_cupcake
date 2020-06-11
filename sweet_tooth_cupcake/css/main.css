@@ -40,10 +40,10 @@ body {
   font-size: 26px;
   width: 50px;
   height: 50px;
-  color: #444444;
+  color: #ff45a2;
   cursor: pointer;
   outline: none;
-  border: 3px solid #444444;
+  border: 3px solid #ff45a2;
   border-radius: 50%;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -84,6 +84,7 @@ nav #navbarNav {
 nav .nav-item {
   margin-left: 20px;
   text-transform: uppercase;
+  border-bottom: 3px solid #fff;
 }
 
 nav .nav-item:hover {
@@ -96,6 +97,12 @@ nav .navbar-brand {
   position: relative;
 }
 
+.navbar-toggler {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
 h1 {
   font-family: "Audiowide", cursive;
   padding-top: 2%;
@@ -104,13 +111,9 @@ h1 {
   font-size: 4rem;
 }
 
-p {
-  padding: 0 2%;
-}
-
 .topCon {
   height: 100%;
-  padding: 4%;
+  padding: 7%;
   background-color: #ff8dc6;
 }
 
@@ -124,19 +127,17 @@ p {
   width: 100%;
 }
 
-.cakes {
+#cakes {
   margin-top: auto;
-  padding: 1%;
   text-align: center;
   background: #333;
 }
 
-.cakes h1 {
-  padding-top: 0;
+#cakes h1 {
   color: #fff;
 }
 
-.cakes .cake-item {
+#cakes .cake-item {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,12 +152,12 @@ p {
           justify-content: center;
 }
 
-.cakes .cake-item img {
+#cakes .cake-item img {
   padding: 10px;
-  max-width: 350px;
+  max-width: 300px;
 }
 
-.cakes .cake-item img:hover {
+#cakes .cake-item img:hover {
   padding: 0;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
@@ -165,7 +166,7 @@ p {
 .testimonials {
   margin-top: 0;
   width: 100%;
-  background: #ff69b4;
+  background-color: #ff8dc6;
 }
 
 .testimonials h1 {
@@ -200,6 +201,7 @@ p {
 
 .map iframe {
   width: 100%;
+  z-index: -1;
 }
 
 .contact-section {
@@ -342,21 +344,32 @@ p {
   color: #444444;
 }
 
-.social-icons {
-  float: right;
-  color: #fff;
-  text-align: justify;
-}
-
 footer {
-  height: 100px;
   background: #000;
   padding: 2%;
   text-align: center;
+  height: 170px;
+}
+
+footer .social-icons {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-icons .fa {
+  color: #fff;
+  margin: 20px;
+}
+
+footer .social-icons .fa:hover {
+  color: #ff69b4;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 footer p {
-  width: 100%;
+  bottom: 20px;
   color: #fff;
 }
 

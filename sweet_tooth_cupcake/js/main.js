@@ -1,4 +1,5 @@
 const toTop = document.querySelector("#toTop");
+const navbarToggler = document.querySelector(".navbar-toggler");
 
 window.addEventListener("scroll", scrollFunction);
 
@@ -11,6 +12,7 @@ function scrollFunction() {
 }
 
 toTop.addEventListener("click", backToTop);
+navbarToggler.addEventListener("click", backToTop);
 
 function backToTop() {
   window.scrollTo(0, 0);
