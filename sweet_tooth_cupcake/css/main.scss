@@ -125,15 +125,22 @@ h1 {
 // }
 
 .topCon {
+  display: flex;
+  justify-content: space-evenly;
   height: 100%;
-  padding: 7%;
+  padding: 5%;
   background-color: lighten($secondary-color, 7);
 
   .textBack {
-    // margin: 3px;
+    // margin: 10px;
     padding: 4%;
     background-color: #fff;
-    border-radius: 10px;
+  }
+  .flavours {
+    padding-top: 40px;
+    font-size: 26px;
+    text-align: center;
+    background: #333;
   }
 }
 

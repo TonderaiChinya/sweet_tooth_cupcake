@@ -112,15 +112,27 @@ h1 {
 }
 
 .topCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 100%;
-  padding: 7%;
+  padding: 5%;
   background-color: #ff8dc6;
 }
 
 .topCon .textBack {
   padding: 4%;
   background-color: #fff;
-  border-radius: 10px;
+}
+
+.topCon .flavours {
+  padding-top: 40px;
+  font-size: 26px;
+  text-align: center;
+  background: #333;
 }
 
 .row img {
